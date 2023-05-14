@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: 'Roboto',sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+
+}
+
+.container {
+  border: 2px black solid;
+  border-radius: 15px;
+  max-width: 1200px;
+  
+  max-height: 80%;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.verifytext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.verifytext p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.code-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.code {
+  border-radius: 5px;
+  font-size: 75px;
+  font-weight: 300;
+  width: 100px;
+  height: 120px;
+
+  border: 1px solid #eee;
+  margin: 1%;
+  text-align: center;
+ 
+}
+
+.code:valid {
+  border-color: #3498db;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media(max-width: 600px) {
+  .code-container{
+    flex-wrap: wrap;
+  }
+
+.code {
+  font-size: 60px;
+  height: 80px;
+}
+
+}
